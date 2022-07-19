@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1321px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+}
+
+
+/* Top banner section styles */
+
+.top-banner-section .container {
+    background-color: #1e1e1e;
+    border-radius: 30px;
+}
+
+.top-banner-section .main-column {
+    max-width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-column .left-column {
+    width: 48%;
+    margin-right: 2%;
+}
+
+.main-column .left-column .banner-caption {
+    max-width: 531px;
+}
+
+.main-column .left-column h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 95px;
+}
+
+.main-column .left-column p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 50px;
+}
+
+.main-column .left-column .common-button {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #dd0000;
+    padding: 16px 25px 16px 25px;
+    border-radius: 7px;
+}
+.main-column .left-column .icon{
+ padding-left: 10px;
+}
+.main-column .right-column {
+    width: 50%;
+}
+
+.main-column .right-column img {
+    width: 581px;
+    height: 613px;
+    padding-top: 33px;
+}
