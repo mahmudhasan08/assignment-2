@@ -280,7 +280,9 @@ body {
 .match-shedeul .right-column .flag-2 {
     padding-right: 25px;
 }
-
+.match-shedeul .blog-info .blog-caption{
+    text-align: center;
+}
 
 /* responsiv display start now */
 
