@@ -20,6 +20,8 @@ body {
 .top-banner-section .container {
     background-color: #1e1e1e;
     border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 120px;
 }
 
 .top-banner-section .main-column {
@@ -29,23 +31,23 @@ body {
     flex-wrap: wrap;
 }
 
-.main-column .left-column {
+.top-banner-section .main-column .left-column {
     width: 48%;
     margin-right: 2%;
 }
 
-.main-column .left-column .banner-caption {
+.top-banner-section .banner-caption {
     max-width: 531px;
 }
 
-.main-column .left-column h1 {
+.top-banner-section .left-column h1 {
     font-size: 70px;
     font-weight: 700;
     color: #fff;
     padding-top: 95px;
 }
 
-.main-column .left-column p {
+.top-banner-section .left-column p {
     font-size: 16px;
     color: #fff;
     font-weight: 400;
@@ -53,7 +55,7 @@ body {
     padding-bottom: 50px;
 }
 
-.main-column .left-column .common-button {
+.top-banner-section .common-button {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
@@ -61,16 +63,126 @@ body {
     background-color: #dd0000;
     padding: 16px 25px 16px 25px;
     border-radius: 7px;
+    transition: .3s;
 }
-.main-column .left-column .icon{
- padding-left: 10px;
+
+.top-banner-section .icon {
+    padding-left: 10px;
 }
-.main-column .right-column {
+
+.top-banner-section .common-button:active {
+    background-color: aliceblue;
+    color: #000;
+}
+
+.top-banner-section .main-column .right-column {
     width: 50%;
 }
 
-.main-column .right-column img {
+.top-banner-section .right-column img {
     width: 581px;
     height: 613px;
     padding-top: 33px;
+}
+
+/* blog section style */
+
+.blog-section .main-column {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-section .left-column {
+    width: 23.5%;
+    margin-right: 1.5%;
+}
+
+.blog-section .right-column {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 2.5%;
+}
+
+.blog-section .buttons {
+    background-color: #1e1e1e;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.blog-section .button {
+    max-width: 252px;
+    margin: 0 auto;
+}
+
+.blog-section .button a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.blog-section .button a:hover {
+    background-color: #dd0000;
+
+}
+
+.blog-section .button .btn-2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.blog-section .blogs-item {
+    box-shadow: 0px 0px 3px 0px;
+    border-radius: 10px;
+}
+
+.blog-section .right-column .blogs-item img {
+    width: 314px;
+    height: 175px;
+    padding-bottom: 20px;
+}
+
+.blog-section .right-column .blog-info {
+    max-width: 272px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.blog-section .blog-info .common-button {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    border: 2px solid #000;
+    padding: 4px 20px;
+    border-radius: 6px;
+}
+
+.blog-section .blog-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.blog-section .fa-solid {
+    color: #454545;
+}
+
+.blog-section .icon-1,
+.icon-2 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-right: 30px;
+    color: #5c5c5c;
 }
