@@ -259,7 +259,6 @@ body {
 }
 
 .right-column .blogs-item .blog-info {
-    text-align: center;
     padding-bottom: 40px;
 }
 
@@ -537,6 +536,4 @@ body {
         font-size: 40px;
         font-weight: 600;
     }
-
-
 }
