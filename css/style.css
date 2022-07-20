@@ -16,11 +16,14 @@ body {
 
 
 /* Top banner section styles */
-
-.top-banner-section .container {
+.top-banner-section .background-color {
     background-color: #1e1e1e;
     border-radius: 30px;
     margin-top: 30px;
+    margin-bottom: 120px;
+}
+
+.top-banner-section .container {
     margin-bottom: 120px;
 }
 
@@ -80,7 +83,7 @@ body {
 }
 
 .top-banner-section .right-column img {
-    width: 581px;
+    width: 100%;
     height: 613px;
     padding-top: 33px;
 }
@@ -191,6 +194,9 @@ body {
     padding-bottom: 120px;
 }
 
+.view-button {
+    display: none;
+}
 
 /* footer section start now */
 
@@ -226,49 +232,188 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
-    color: #fff;
+    color: #B9B9B9;
     padding-right: 50px;
 }
- 
+
 /* match shedeul page style */
 
-.right-column .flags{
+.right-column .flags {
     display: flex;
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 0;
 }
-.right-column .blogs-item .flags img{
+
+.right-column .blogs-item .flags img {
     width: 92px;
     height: 56px;
 }
-.right-column .blogs-item span{
+
+.right-column .blogs-item span {
     padding-left: 25px;
     padding-right: 25px;
     margin-top: 15px;
     font-size: 16px;
     font-weight: 700;
 }
-   
-.right-column .blogs-item .blog-info{
-   text-align: center;
-   padding-bottom: 40px;
+
+.right-column .blogs-item .blog-info {
+    text-align: center;
+    padding-bottom: 40px;
 }
-.right-column .blogs-item .blog-info .title{
+
+.right-column .blogs-item .blog-info .title {
     font-size: 20px;
     font-weight: 600;
     padding-bottom: 15px;
     padding-top: 0
 }
-.right-column .flexbox{
+
+.right-column .flexbox {
     padding-bottom: 30px;
 }
-.match-shedeul .right-column .flag-1{
+
+.match-shedeul .right-column .flag-1 {
     padding-left: 25px;
 }
-.match-shedeul .right-column .flag-2{
+
+.match-shedeul .right-column .flag-2 {
     padding-right: 25px;
 }
 
 
 /* responsiv display start now */
+
+@media only screen and (max-width:688px) {
+    .top-banner-section {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        max-width: 734px;
+        padding-left: 35px;
+        padding-right: 35px;
+        margin: 0 auto;
+    }
+
+    /* top banner section */
+
+    .top-banner-section .container {
+        margin-bottom: -75px;
+    }
+
+    .top-banner-section .main-column {
+        max-width: 640px;
+        margin: 0 auto;
+    }
+
+    .top-banner-section .banner-caption {
+        max-width: 290px;
+    }
+
+    .top-banner-section .left-column h1 {
+        font-size: 40px;
+        padding-bottom: 10px;
+        padding-top: 60px;
+    }
+
+    .top-banner-section .left-column p {
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+
+    .top-banner-section .left-column p span {
+        display: none;
+    }
+
+    .top-banner-section .common-button {
+        padding: 12px;
+    }
+
+    .top-banner-section .right-column img {
+        height: 360px;
+        padding-top: 60px;
+    }
+
+    /* blog section */
+
+    .blog-section .main-column {
+        flex-direction: column;
+    }
+
+    .blog-section .left-column {
+        width: 100%;
+    }
+
+    .blog-section .buttons {
+        background-color: #fff;
+        padding-bottom: 35px;
+    }
+
+    .blog-section .button {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100%;
+        grid-column-gap: 25px;
+    }
+
+    .blog-section .button a {
+        box-shadow: 0px 0px 2px 1px;
+        font-weight: 600;
+    }
+
+    .blog-section .button .btn-2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .blog-section .right-column {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .blog-section .right-column .blogs-item img {
+        width: 100%;
+    }
+
+    .blog-section .blogs-item:last-child {
+        display: none;
+    }
+
+    .view-button {
+        display: block;
+        margin-top: 15px;
+        margin-left: 300px;
+    }
+
+    .view-button a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        background: #dd0000;
+        color: #fff;
+        text-align: center;
+        padding: 8px 25px;
+        border-radius: 7px;
+    }
+    .view-button a:active{
+        background-color: blue;
+    }
+    .blog-section .container {
+        padding-bottom: 85px;
+    }
+    /* .footer-section style */
+    .footer-section .row-1 h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .footer-section .row-2 span{
+        padding-top: 20px;
+    }
+    .blog-section .match-shedeul .blogs-item:last-child{
+        display: block;
+    }
+}
