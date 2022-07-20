@@ -229,3 +229,46 @@ body {
     color: #fff;
     padding-right: 50px;
 }
+ 
+/* match shedeul page style */
+
+.right-column .flags{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+.right-column .blogs-item .flags img{
+    width: 92px;
+    height: 56px;
+}
+.right-column .blogs-item span{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+}
+   
+.right-column .blogs-item .blog-info{
+   text-align: center;
+   padding-bottom: 40px;
+}
+.right-column .blogs-item .blog-info .title{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    padding-top: 0
+}
+.right-column .flexbox{
+    padding-bottom: 30px;
+}
+.match-shedeul .right-column .flag-1{
+    padding-left: 25px;
+}
+.match-shedeul .right-column .flag-2{
+    padding-right: 25px;
+}
+
+
+/* responsiv display start now */
